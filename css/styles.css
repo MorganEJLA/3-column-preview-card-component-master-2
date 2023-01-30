@@ -1,0 +1,142 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*======================================================
+    COLOR PALETTE
+======================================================*/
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraphs */
+    --very-light-grey: hsl(0, 0%, 95%); /*buttons,headings, background */
+}
+
+body{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    font-family:'Lexend Deca', sans-serif;
+    font-size:0.9375rem;
+    /* 15px */
+    color:var(--transparent-white);
+
+}
+.card-container{
+    margin:3rem;
+    grid-template-columns:repeat(1, 3fr);
+    max-width:1000px;
+    border-radius:8px;
+    overflow:hidden;
+
+}
+
+
+.card-icon{
+    height:40px;
+    width:64px;
+
+}
+
+.card{
+    
+    padding:3rem;
+}
+
+
+.card-header{
+    font-family:'Big Shoulders Display', cursive;
+    color:#fff;
+    text-transform: uppercase;
+    margin-top:25px;
+    font-size:2.5rem;
+    font-weight:700;
+
+}
+
+.detail{
+    line-height:25px;
+    margin-top:25px;
+    padding-bottom:25px;
+}
+
+.card-one{
+    background-color:var(--bright-orange);
+}
+.card-two{
+    background-color:var(--dark-cyan);
+}
+
+.card-three{
+    background-color:var(--very-dark-cyan);
+}
+
+.btn{
+    background-color: var(--very-light-grey);
+    margin-top:25px;
+    width:fit-content;
+    font-family:'Lexend Deca', sans-serif;
+    font-size:0.9375rem;
+    padding:0.625rem 1.25rem;
+    display:flex;
+    align-content:flex-end;
+    border-radius:1.5625rem;
+    border:2px solid var(--transparent-white);
+    cursor:pointer;
+    
+   
+}
+
+a{
+    text-decoration:none;
+}
+#btn-1{
+    color:var(--bright-orange);
+
+}
+
+#btn-2{
+    color:var(--dark-cyan);
+}
+
+#btn-3{
+    color:var(--very-dark-cyan);
+    
+}
+
+#btn-1:hover,
+#btn-1:focus{
+    background-color: var(--bright-orange);
+    color:var(--very-light-grey);
+}
+
+#btn-2:hover,
+#btn-2:focus{
+    background-color:var(--dark-cyan);
+    color:var(--very-light-grey);
+}
+
+#btn-3:hover,
+#btn-3:focus{
+    background-color:var(--very-dark-cyan);
+    color:var(--very-light-grey);
+}
+/* Media Queries */
+
+@media(min-width:1000px){
+    .card-container{
+        margin-top:3rem;
+        display:grid;
+        align-items:center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .btn{
+        
+            margin-top:83px;
+            margin-bottom:48px;
+        }
+}
