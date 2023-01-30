@@ -165,7 +165,7 @@ footer{
     }
     
     .btn{
-        align-items:first baseline;
+        align-content:baseline;
     }
 
 }
