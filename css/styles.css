@@ -56,7 +56,7 @@ body{
     
     margin-top:25px;
     line-height: 25px;
-    padding-right:5rem;
+    /* margin-right:6.9rem; */
     flex-wrap: wrap;
    
     text-align: left;
@@ -86,7 +86,7 @@ body{
     background-color:var(--very-dark-cyan);
 }
 
-.btn{
+button{
     background-color: var(--very-light-grey);
     width:fit-content;
     font-family:'Lexend Deca', sans-serif;
@@ -105,36 +105,34 @@ body{
 a{
     text-decoration:none;
 }
-#btn-1{
+button:hover{
+    background-color: transparent;
+}
+.btn1-link{
     color:var(--bright-orange);
-
 }
 
-#btn-2{
+.btn1-link:hover,
+.btn1-link:focus{
+    color:var(--very-light-grey);
+}
+
+.btn2-link{
     color:var(--dark-cyan);
 }
+.btn2-link:hover,
+.btn2-link:focus{
+    color:var(--very-light-grey);
 
-#btn-3{
+}
+
+.btn3-link{
     color:var(--very-dark-cyan);
-    
 }
-
-#btn-1:hover,
-#btn-1:focus{
-    background-color: var(--bright-orange);
+.btn3-link:hover,
+.btn3-link:focus{
     color:var(--very-light-grey);
-}
 
-#btn-2:hover,
-#btn-2:focus{
-    background-color:var(--dark-cyan);
-    color:var(--very-light-grey);
-}
-
-#btn-3:hover,
-#btn-3:focus{
-    background-color:var(--very-dark-cyan);
-    color:var(--very-light-grey);
 }
 
 footer{
@@ -159,7 +157,7 @@ footer{
     }
 
     .detail{
-        padding-right:.6rem;
+        padding-right:.7rem;
         align-content: first baseline;
         padding-bottom:26px;
     }
